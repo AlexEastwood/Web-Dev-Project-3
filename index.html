@@ -11,10 +11,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header><h3>THE CODE REVIEW</h3></header>
-    <div class="subheading">Signup for our newsletter</div>
-    <div>Get the latest news on how your code is doing right in your inbox</div>
-    <hr>
-    <hr>
+    <main>
+        <header><h3>THE CODE REVIEW</h3></header>
+        <div class="subheading">Signup for our newsletter</div>
+        <div class="intro">Get the latest news on how your code is doing right in your inbox</div>
+        <hr>
+        <hr>
+        <form action="POST">
+            <div class="subheading">Contact Information</div>    
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Required ">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Required ">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+            <label for="street">Street Address</label>
+            <input type="text" id="street" name="street">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+            <label for="city">City</label>
+            <select name="city" id="city" placeholder="Choose State">
+                <option hidden>Choose State</option>
+                <option style="color: black" value="these">These</option>
+                <option value="are">Are</option>
+                <option value="cities">Cities</option>
+            </select>
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="zip">
+            <hr>
+            <div class="subheading">Newsletter</div>
+            <div class="newsletter-options">Select the newsletters you would like to receive</div>
+            <input type="checkbox" name="html" id="html">
+            <label for="html">HTML News</label>
+            <input type="checkbox" name="css" id="css">
+            <label for="html">CSS News</label>
+            <input type="checkbox" name="javascript" id="javascript">
+            <label for="html">Javascript News</label>
+        </form>
+        
+    </main> 
 </body>
 </html>

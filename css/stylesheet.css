@@ -1,7 +1,20 @@
+/*
+-------------------------------------------------
+Element Styles
+-------------------------------------------------
+*/
+* {
+    box-sizing: border-box;
+  }
 body {
     margin: 0;
     padding: 0;
     font-family: 'Libre Baskerville', serif;
+    
+}
+main {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,23 +28,87 @@ header {
     align-items: center;
     justify-content: center;
 }
+main > hr:first-of-type {
+    margin-top: 40px;
+    border: 2px solid #001d3d;
+}
+form > hr {
+    width: 100%;
+}
+hr {
+    border: 1px solid #001d3d;
+    width: 90%;
+    margin: 1px;
+}
+form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    color: #001d3d
+}
+input[type="text"], 
+input[type="email"],
+input[type="tel"], 
+select {
+    width: 100%;
+    height: 7vh;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    padding: 0 5%;
+}
+input[type="checkbox"] {
+    width: 5%;
+}
+input::placeholder {
+    color: gray;
+    text-align: end;
+    font-style: italic;
+}
+input:focus {
+    outline: none !important;
+    border: 2px solid #001d3d;
+}
+select {
+    color: gray;
+}
+label[for="zip"] {
+    display: block;
+    width: 100%;
+}
+input[type="checkbox"] + label {
+    width: 50%;
+}
+/*
+-------------------------------------------------
+Class Styles
+-------------------------------------------------
+*/
 .subheading {
     color: #001d3d;
     font-weight: 700;
     font-size: 1.3rem;
     margin: 3vh 0;
 }
-.subheading + div {
+.intro {
     color: gray;
     width: 90%;
     text-align: center;
 }
-hr:first-of-type {
-    margin-top: 40px;
-    border: 2px solid #001d3d;
-}
-hr {
-    border: 1px solid #001d3d;
+.newsletter-options {
+    color: #001d3d;
     width: 95%;
-    margin: 1px;
+    align-self: center;
+}
+/*
+-------------------------------------------------
+ID Styles
+-------------------------------------------------
+*/
+#zip {
+    width: 50%;
 }
