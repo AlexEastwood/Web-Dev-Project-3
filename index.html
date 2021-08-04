@@ -29,24 +29,45 @@
             <input type="text" id="street" name="street">
             <label for="city">City</label>
             <input type="text" id="city" name="city">
-            <label for="city">City</label>
-            <select name="city" id="city" placeholder="Choose State">
+            <label for="state">State</label>
+            <select name="state" id="state" placeholder="Choose State">
                 <option hidden>Choose State</option>
                 <option style="color: black" value="these">These</option>
                 <option value="are">Are</option>
-                <option value="cities">Cities</option>
+                <option value="cities">States</option>
             </select>
             <label for="zip">Zip Code</label>
             <input type="text" id="zip" name="zip">
             <hr>
             <div class="subheading">Newsletter</div>
             <div class="newsletter-options">Select the newsletters you would like to receive</div>
-            <input type="checkbox" name="html" id="html">
-            <label for="html">HTML News</label>
-            <input type="checkbox" name="css" id="css">
-            <label for="html">CSS News</label>
-            <input type="checkbox" name="javascript" id="javascript">
-            <label for="html">Javascript News</label>
+            <div class="sub-container">
+                <input type="checkbox" name="html" id="html">
+                <label for="html">HTML News</label>
+            </div>
+            <div class="sub-container">
+                <input type="checkbox" name="css" id="css">
+                <label for="css">CSS News</label>
+            </div>
+            <div class="sub-container">
+                <input type="checkbox" name="javascript" id="javascript">
+                <label id="javascript" for="javascript">Javascript News</label>
+                <div>Newsletter format</div>
+            </div>
+            <div class="sub-container">
+                <input type="radio" name="format" id="html">
+                <label for="html">HTML</label>
+            </div>
+            <div class="sub-container">
+                <input type="radio" name="format" id="text">
+                <label id="plain-text" for="text">Plain Text</label>
+                <div style="margin-top: 3vh">Other topics you'd like to hear about</div>
+            </div>
+            <textarea name="topics" id="topics" cols="30" rows="10"></textarea>
+            <input type="submit" value="Sign Up">
+            <div class="copyright">Copyright The Code Review</div>
+
+            
         </form>
         
     </main> 
