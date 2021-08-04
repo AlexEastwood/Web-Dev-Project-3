@@ -10,7 +10,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Libre Baskerville', serif;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 main {
     height: 100%;
@@ -51,6 +53,8 @@ label {
 input,
 textarea {
     font-family: 'Libre Baskerville', serif;
+    font-size: 120%;
+    color: #001d3d;
 }
 input[type="text"], 
 input[type="email"],
@@ -80,7 +84,8 @@ textarea:focus {
     border: 2px solid #001d3d;
 }
 select {
-    color: gray;
+    color: grey;
+    font-family: 'Libre Baskerville', serif;
 }
 label[for="zip"] {
     display: block;
@@ -144,4 +149,14 @@ ID Styles
 #javascript,
 #plain-text {
     margin-bottom: 3vh;
+}
+/*
+-------------------------------------------------
+Media Queries
+-------------------------------------------------
+*/
+@media screen and (min-width: 768px){
+    main {
+        width: 60%;
+    }
 }
