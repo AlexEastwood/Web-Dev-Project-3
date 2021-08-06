@@ -93,7 +93,6 @@ label[for="zip"] {
 }
 input[type="checkbox"] + label {
     width: 85%;
-    margin-left: 4vw;
     margin-top: 3vh;
 }
 textarea {
@@ -101,6 +100,7 @@ textarea {
     padding: 10px;
 }
 input[type="submit"] {
+    width: 100%;
     height: 10vh;
     background-color: #82DDED;
     font-family: 'Libre Baskerville', serif;
@@ -108,6 +108,9 @@ input[type="submit"] {
     border-radius: 5px;
     border: none;
     color: white;
+}
+fieldset {
+    border: none;
 }
 /*
 -------------------------------------------------
