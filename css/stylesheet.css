@@ -79,7 +79,8 @@ input::placeholder {
     font-style: italic;
 }
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
     outline: none !important;
     border: 2px solid #001d3d;
 }
@@ -162,4 +163,20 @@ Media Queries
     main {
         width: 60%;
     }
+    #inputs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #inputs > label {
+        flex-basis: 25%;
+        padding-top: 4vh;
+    }
+    #zip {
+        width: 25% !important;
+    }
+    #inputs > input,
+    #inputs > select {
+        width: 75%;
+    }
+    
 }

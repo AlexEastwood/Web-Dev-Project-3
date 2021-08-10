@@ -18,7 +18,7 @@
         <hr>
         <hr>
         <form action="POST">
-            <fieldset>
+            <fieldset id="inputs">
                 <legend class="subheading">Contact Information</legend>    
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" placeholder="Required ">
@@ -33,9 +33,9 @@
                 <label for="state">State</label>
                 <select name="state" id="state" placeholder="Choose State">
                     <option hidden>Choose State</option>
-                    <option style="color: black" value="these">These</option>
-                    <option value="are">Are</option>
-                    <option value="cities">States</option>
+                    <option value="These">These</option>
+                    <option value="Are">Are</option>
+                    <option value="States">States</option>
                 </select>
                 <label for="zip">Zip Code</label>
                 <input type="text" id="zip" name="zip">
@@ -45,7 +45,7 @@
                 <legend class="subheading">Newsletter</legend>
                 <div class="newsletter-options">Select the newsletters you would like to receive</div>
                 <div class="sub-container">
-                    <input type="checkbox" name="html" id="html">
+                    <input type="checkbox" name="html" id="html-check">
                     <label for="html">HTML News</label>
                 </div>
                 <div class="sub-container">
@@ -58,14 +58,14 @@
                     <div>Newsletter format</div>
                 </div>
                 <div class="sub-container">
-                    <input type="radio" name="format" id="html">
+                    <input type="radio" name="format" id="html-radio">
                     <label for="html">HTML</label>
                 </div>
-                <div class="sub-container">
+                <div style="margin-bottom: 5vh;"class="sub-container">
                     <input type="radio" name="format" id="text">
                     <label id="plain-text" for="text">Plain Text</label>
-                    <div style="margin-top: 3vh">Other topics you'd like to hear about</div>
                 </div>
+                <label for="topics">Other topics you'd like to hear about</div>
                 <textarea name="topics" id="topics" cols="30" rows="10"></textarea>
                 <input type="submit" value="Sign Up">
             </fieldset>
