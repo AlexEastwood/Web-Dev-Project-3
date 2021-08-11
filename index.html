@@ -1,79 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/stylesheet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
-</head>
-<body>
-    <header><h3>THE CODE REVIEW</h3></header>
-    <main>
-        <div class="subheading">Signup for our newsletter</div>
-        <div class="intro">Get the latest news on how your code is doing right in your inbox</div>
-        <hr>
-        <hr>
-        <form action="POST">
-            <fieldset id="inputs">
-                <legend class="subheading">Contact Information</legend>    
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Required ">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Required ">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone">
-                <label for="street">Street Address</label>
-                <input type="text" id="street" name="street">
-                <label for="city">City</label>
-                <input type="text" id="city" name="city">
-                <label for="state">State</label>
-                <select name="state" id="state" placeholder="Choose State">
-                    <option hidden>Choose State</option>
-                    <option value="These">These</option>
-                    <option value="Are">Are</option>
-                    <option value="States">States</option>
-                </select>
-                <label for="zip">Zip Code</label>
-                <input type="text" id="zip" name="zip">
-            </fieldset>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header><h3>THE CODE REVIEW</h3></header>
+        <main>
+            <div class="subheading">Signup for our newsletter</div>
+            <div class="intro">Get the latest news on how your code is doing right in your inbox</div>
             <hr>
-            <fieldset>
-                <legend class="subheading">Newsletter</legend>
-                <div class="newsletter-options">Select the newsletters you would like to receive</div>
-                <div class="sub-container">
-                    <input type="checkbox" name="html" id="html-check">
-                    <label for="html">HTML News</label>
-                </div>
-                <div class="sub-container">
-                    <input type="checkbox" name="css" id="css">
-                    <label for="css">CSS News</label>
-                </div>
-                <div class="sub-container">
-                    <input type="checkbox" name="javascript" id="javascript">
-                    <label id="javascript" for="javascript">Javascript News</label>
-                    <div>Newsletter format</div>
-                </div>
-                <div class="sub-container">
-                    <input type="radio" name="format" id="html-radio">
-                    <label for="html">HTML</label>
-                </div>
-                <div style="margin-bottom: 5vh;"class="sub-container">
-                    <input type="radio" name="format" id="text">
-                    <label id="plain-text" for="text">Plain Text</label>
-                </div>
-                <label for="topics">Other topics you'd like to hear about</div>
-                <textarea name="topics" id="topics" cols="30" rows="10"></textarea>
-                <input type="submit" value="Sign Up">
-            </fieldset>
-            <div class="copyright">Copyright The Code Review</div>
-
-            
-        </form>
-        
-    </main> 
-</body>
+            <hr>
+            <form action="POST">
+                <fieldset id="inputs">
+                    <legend class="subheading">Contact Information</legend>    
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Required ">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Required ">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                    <label for="street">Street Address</label>
+                    <input type="text" id="street" name="street">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city">
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option hidden>Choose State</option>
+                        <option value="These">These</option>
+                        <option value="Are">Are</option>
+                        <option value="States">States</option>
+                    </select>
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="zip">
+                </fieldset>
+                <hr>
+                <fieldset>
+                    <legend class="subheading">Newsletter</legend>
+                    <div class="newsletter-options">Select the newsletters you would like to receive</div>
+                    <div class="sub-container">
+                        <input type="checkbox" name="html" id="html-check">
+                        <label for="html-check">HTML News</label>
+                    </div>
+                    <div class="sub-container">
+                        <input type="checkbox" name="css" id="css">
+                        <label for="css">CSS News</label>
+                    </div>
+                    <div class="sub-container">
+                        <input type="checkbox" name="javascript" id="javascript">
+                        <label for="javascript">Javascript News</label>
+                        <div>Newsletter format</div>
+                    </div>
+                    <div class="sub-container">
+                        <input type="radio" name="format" id="html-radio">
+                        <label for="html-radio">HTML</label>
+                    </div>
+                    <div style="margin-bottom: 5vh;" class="sub-container">
+                        <input type="radio" name="format" id="text">
+                        <label id="plain-text" for="text">Plain Text</label>
+                    </div>
+                    <label for="topics">Other topics you'd like to hear about</label>
+                    <textarea name="topics" id="topics" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Sign Up">
+                </fieldset>
+                <div class="copyright">Copyright The Code Review</div>
+            </form>
+        </main> 
+    </body>
 </html>
