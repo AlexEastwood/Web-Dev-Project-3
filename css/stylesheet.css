@@ -161,14 +161,14 @@ Media Queries
 */
 @media screen and (min-width: 768px){
     main {
-        width: 60%;
+        width: 70%;
     }
     #inputs {
         display: flex;
         flex-wrap: wrap;
     }
     #inputs > label {
-        flex-basis: 25%;
+        flex-basis: 33%;
         padding-top: 4vh;
     }
     #zip {
@@ -176,7 +176,8 @@ Media Queries
     }
     #inputs > input,
     #inputs > select {
-        width: 75%;
+        width: 66%;
+        align-self: flex-end;
     }
     
 }
